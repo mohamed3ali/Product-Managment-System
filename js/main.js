@@ -25,7 +25,7 @@ function addProduct(){
     }
     else
     {
-        window.alert('Invalid ProductName')
+        window.alert('Invalid ProductName the first letter must be capital')
     }
 
 
@@ -102,7 +102,7 @@ if(btnProduct.innerHTML == 'Add Product'){
 }
 }
 function validateProductName (){
-    var regex = /^[A-Z][a-z]{3,8}$/;
+    var regex = /^[A-Z][a-z]{3,22}$/;
     if(regex.test(productName.value) == true)
     {
         return true;
